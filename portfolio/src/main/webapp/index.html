@@ -3,6 +3,7 @@
   <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Brygada+1918&family=DotGothic16&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
@@ -12,15 +13,49 @@
     <div id="content">
       <h1>
         Julia Sullivan
-        
       </h1>
-      <h2>A Portfolio.</h2>
-      <!-- <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div> -->
 
       <hr>
+      <div id="maincontent">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'About Me')">About Me</button><br>
+          <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button><br>
+          <button class="tablinks" onclick="openTab(event, 'My Job')">My Job</button>
+        </div>
+
+        <div id="About Me" class="tabcontent">
+          <h3>About Me</h3>
+          <p>
+            I like a lot of different things. In the past, it's been a crisis deciding between all of
+            the different things I enjoy including art, composing, programming, writing and more. 
+            Overtime, I more clearly realized that the best route for me would be to focus on programming
+            while feeding my creative outlets on the side! Now, I work at Google full time as a programmer,
+            but work on games and stories on the side!
+          </p>
+        </div>
+
+        <div id="Projects" class="tabcontent">
+          <h3>Projects</h3>
+          <h4>My Core</h4>
+          <p>A WiP turn based RPG.</p>
+          <h4>My Core</h4>
+          <p>A WiP turn based RPG.</p>
+        </div>
+
+        <div id="My Job" class="tabcontent">
+          <h3>My Job</h3>
+          <p>
+            I work at Google as a "software engineer - engineering productivity" on Android Messages.
+            This means I identify what's not working as well as it could on our team
+            and then propose/implement solutions.
+          </p>
+
+          <p>
+            I've worked there for almost 2 years now and love my work/team!
+          </p>
+          <img src="/images/GoogleKirkland.jpg" alt="Google Kirkland interior of a couch" width=250px height=250px float="right">
+        </div>
+      </div>
     </div>
   </body>
 </html>
