@@ -30,7 +30,7 @@ function openTab(evt, tabName) {
 
 async function showHardCodedText(evt) {
   const responseFromServer = await fetch('/hello');
-  const textFromResponse = await responseFromServer.text();
+  const randomStringArray = await responseFromServer.json();
   const hardcodedStr = document.getElementById('hardcoded-string');
-  hardcodedStr.innerText = textFromResponse;
+  hardcodedStr.innerText = randomStringArray[Math.floor(Math.random() * randomStringArray.length)];
 }
