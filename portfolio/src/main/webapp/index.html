@@ -18,9 +18,17 @@
       <hr>
       <div id="maincontent">
         <div class="tab">
+          <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Home')">Home</button>
           <button class="tablinks" onclick="openTab(event, 'About Me')">About Me</button><br>
           <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button><br>
           <button class="tablinks" onclick="openTab(event, 'My Job')">My Job</button>
+        </div>
+
+        <div id="Home" class="tabcontent">
+          <!-- <h3>Portfolio</h3> -->
+          <p>
+            Welcome to my portfolio site!
+          </p>
         </div>
 
         <div id="About Me" class="tabcontent">
@@ -38,8 +46,8 @@
           <h3>Projects</h3>
           <h4>My Core</h4>
           <p>A WiP turn based RPG.</p>
-          <h4>My Core</h4>
-          <p>A WiP turn based RPG.</p>
+          <h4>Forever Rain</h4>
+          <p>An ATB based RPG.</p>
         </div>
 
         <div id="My Job" class="tabcontent">
@@ -58,4 +66,8 @@
       </div>
     </div>
   </body>
+
+  <script>
+    document.getElementById("defaultOpen").click();
+  </script>
 </html>
