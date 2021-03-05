@@ -27,3 +27,10 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+async function showHardCodedText(evt) {
+  const responseFromServer = await fetch('/hello');
+  const textFromResponse = await responseFromServer.text();
+  const hardcodedStr = document.getElementById('hardcoded-string');
+  hardcodedStr.innerText = textFromResponse;
+}

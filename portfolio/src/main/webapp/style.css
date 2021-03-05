@@ -31,6 +31,10 @@ h3 {
 	font-family: 'Antic Slab', serif;
 }
 
+#hardcoded-string {
+  font-family: 'Antic Slab', serif;
+  font-size: 40px;
+}
 
 /* Style the tab */
 
